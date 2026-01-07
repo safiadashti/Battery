@@ -1,0 +1,64 @@
+/* body{
+    background-color: rgb(130, 238, 179);
+    animation-name: first;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    border: 10px solid black;
+} */
+/* @keyframes first{
+    from {background-color: salmon}
+    to {background-color:blueviolet}
+} */
+ /* @keyframes first{
+    0% {background-color: green; 
+    border-color: red;}
+    25% {background-color: brown; }
+    50% {background-color: palevioletred;}
+    100% {background-color: antiquewhite;}
+ }
+  */
+  @keyframes battery{
+    0% {
+        background-color: red;
+        height: 0%;
+    }
+    25% {
+        background-color: orangered;
+        height: 25%;
+    }
+    50% {background-color: orange;
+    height: 50%;}
+    100% {
+        background-color:green ;
+        height: 100%;
+    }
+  }
+  .battery{
+    position: relative;
+    bottom: -200px;
+    left: 600px;
+    height: 400px;
+    width: 250px;
+    border: 3px solid black;
+  }
+  .box{
+    width: 60px;
+    height: 10px;
+    border: 3px solid black;
+    top: -18px;
+    position: relative;
+    left: 90px;
+  }
+  body{
+    background-image: url(./download\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .color{
+    position: absolute;
+    animation-delay: 3s;
+    animation-duration: 20s;
+    animation-name: battery;
+    width: 100%;
+    bottom: 0;
+  }
